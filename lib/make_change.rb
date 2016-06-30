@@ -32,8 +32,7 @@ class String
         available_change[0] -= 1
       end
     end
-    final_array.push(change_array).push(available_change)
+    final_array.push(change_array.map {|a| a.to_s}).push(available_change.map {|a| a.to_s})
     final_array
   end
 end
-puts "67".make_change(7,5,6,8)
