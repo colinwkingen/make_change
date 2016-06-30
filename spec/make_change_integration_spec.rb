@@ -12,7 +12,7 @@ describe('the make change path',  {:type => :feature}) do
     fill_in('dimes', :with => 1)
     fill_in('quarters', :with => 1)
     click_button('Submit')
-    expect(page).to have_content('You got 1 pennies back
+    expect(page).to have_content(' You got 1 pennies back
     You got 0 nickles back
     You got 0 dimes back
     You got 0 quarters back
@@ -30,7 +30,7 @@ describe('the make change path',  {:type => :feature}) do
     fill_in('dimes', :with => 1)
     fill_in('quarters', :with => 10)
     click_button('Submit')
-    expect(page).to have_content('You got 2 pennies back
+    expect(page).to have_content(' You got 2 pennies back
     You got 1 nickles back
     You got 1 dimes back
     You got 10 quarters back
@@ -39,6 +39,5 @@ describe('the make change path',  {:type => :feature}) do
     There are still 0 dimes in the bank.
     There are still 0 quarters in the bank.
     ')
-#save_and_open_page
   end
 end
